@@ -1,0 +1,134 @@
+/*== 
+	BASE STYLE 
+			  ==*/
+
+body {
+	color: #363636;
+	font: $font;
+	letter-spacing: 0.04em;	
+}
+
+.container {
+	width: 100%;
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.container-fluid {
+	width: 100%;
+	margin: 0 auto;
+}
+div, p, form, input, a, span, button {
+	box-sizing: border-box;
+}
+ul, li {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+p {
+	margin: 0;
+	padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+	font-family:'BR_Haetten', sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 0.04em;
+}
+h1 {	
+	font-size: 120px;	
+}
+h2 {	
+	font-size: 71px;
+}
+h3 {
+	font-size: 34px;
+}
+h4 {
+	font-size: 23px;
+}
+h5 {
+
+}
+a, a:hover, a:active {
+	text-decoration: none;
+}
+a:focus,
+input, input:hover, input:focus, input:active,
+button, button:hover, button:focus, button:active {
+	outline: none;
+}
+.img-fluid{	
+	display: block;
+	max-width: 100%;
+	height: auto;
+}
+
+.d-none {
+	display: none;
+}
+
+.d-block {
+	display: block;
+}
+
+.text-left {
+	text-align: left;
+}
+
+.text-center {
+	text-align: center;
+}
+
+.text-right {
+	text-align: right;
+}
+
+
+/*== 
+	FLEX BOX 
+			==*/
+
+.d-flex {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+.justify-center {
+	justify-content:center;
+}
+.justify-between {
+	justify-content: space-between;
+}
+.align-center {
+	align-items: center;
+}
+.align-end {
+	align-items: flex-end;
+}
+
+/*==
+	Project style 
+				 ==*/
+.btn {	
+	width: 267px;
+	display: block;
+	text-align: center;
+	color: #363636;
+	padding-top: 6px;
+	padding-bottom: 18px;
+	border: 2px solid;
+	text-transform: uppercase;
+	font: 21px 'BR_Haetten', sans-serif;
+	letter-spacing: 0.04em;
+	background: transparent;
+	span {
+		font-size: 34px;
+		margin-right: 8px;
+		display: inline-block;
+	}
+}

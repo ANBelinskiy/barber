@@ -1,0 +1,47 @@
+.btn-phone {
+    color: $gray-dark;
+    font: 400 24px 'Haettenschweiler',
+    sans-serif;
+    letter-spacing: .04em;
+    &:hover {
+        color: $gray-dark;
+        transition: $transition;
+        text-decoration: underline;
+        
+    }
+}
+
+.btn-form {
+    width: 267px;
+    display: flex;
+    text-align: center;
+    color: $gray-dark;
+    align-items: center;
+    justify-content: center;
+    border: $border;
+    text-transform: uppercase;
+    font: 21px 'Haettenschweiler',
+    sans-serif;
+    letter-spacing: .04em;
+    background: transparent;
+    transition: $transition;
+    &:hover {
+       color: $gray-dark;
+       transition: $transition;
+       text-decoration: none;
+       box-shadow: 1px 2px 17px 3px rgba(41, 75, 79, 0.4) inset;
+    }
+    span {
+        padding: 0 7px 12px 0;
+        line-height: 31px;
+        letter-spacing: 1.36px;
+        font: 400 34px 'Haettenschweiler',
+        sans-serif;
+    }
+}
+
+a,
+a:active,
+a:hover {
+    text-decoration: none;
+}

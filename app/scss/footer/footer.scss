@@ -1,0 +1,113 @@
+.footerBlock {
+    margin-top: 138px;
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        width: 290px;
+        height: 210px;
+        opacity: .4;
+        background: url(../../img/content/barber_04.png) top center/cover no-repeat;
+        top: -65px;
+        left: -84px;
+        z-index: -3;
+    }
+    p {
+        font-size: 13px;
+        line-height: 31px;
+        letter-spacing: 0.52px;
+        margin-bottom: 180px;
+    }
+}
+
+
+.footerBlock__title {
+    position: relative;
+    margin-bottom: 17px;
+    z-index: 1;
+    color: $gray-dark;
+    font: 400 43px 'Haettenschweiler', sans-serif;
+    line-height: 45.92px;
+    max-width: 125px;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+    span {
+        color: #50472a;
+    }
+
+    &:before {
+        position: absolute;
+        content: '';
+        background: $gray-dark;
+        max-width: 39px;
+        max-height: 7px;
+        @extend %w-h-100;
+        display: block;
+        top: 50%;
+        left: -47px;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        max-width: 55px;
+        max-height: 39px;
+        @extend %w-h-100;
+        background: url(../../img/content/barber_01.png) top center/cover no-repeat;
+        top: 6px;
+        left: -2px;
+        z-index: -1;
+    }
+}
+
+.footerBlock__mail {
+    color: $gray-dark;
+
+    &:hover {
+        color: $gray-dark;
+        text-decoration: underline;
+    }
+}
+
+.footerBlock__mouse {
+    font-size: 30px;
+    color: $gray-light;
+    transition: $transition;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: $gray-dark;
+        transition: $transition;
+    }
+}
+
+
+
+.fab {
+    font-size: 14px;
+}
+
+.footerBlock__social {
+     margin-right: 91px;
+    a {
+        color: $gray-dark;
+        border: $border;
+        display: flex;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        justify-content: center;
+        transition: $transition;
+        &:hover {
+            color: $gray-light;
+            transition: $transition;
+        }
+
+        &:not(:last-child) {
+            margin-right: 14px;
+        }
+         
+    }
+}

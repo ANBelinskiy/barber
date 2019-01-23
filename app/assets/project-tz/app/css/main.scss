@@ -1,0 +1,394 @@
+@import 'fonts';
+@import 'libs';
+@import 'vars';
+@import 'mixins';
+@import 'base';
+
+/*==
+	HEADER 
+		  ==*/
+.header {
+	padding-top: 65px;
+	padding-bottom: 140px;
+	overflow: hidden;
+	background: #ffffff;
+	background: -moz-linear-gradient(-45deg, #ffffff 0%, #f5f5f5 47%, #e6e6e6 100%);
+	background: -webkit-linear-gradient(-45deg, #ffffff 0%,#f5f5f5 47%,#e6e6e6 100%);
+	background: linear-gradient(135deg, #ffffff 0%,#f5f5f5 47%,#e6e6e6 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e6e6e6',GradientType=1 );
+	.container {
+		position: relative;
+	}
+}
+.offerInfo {
+	padding-top: 20px;
+	min-width: 470px;
+}
+.offerInfo__phone {
+	 font: 24px 'BR_Haetten', sans-serif;
+	 color: #7b7b7b;
+	 letter-spacing: 0.04em;
+}
+.offerInfo__title {
+	max-width: 300px;
+	line-height: 1.05;
+	margin-top: 70px;
+	position: relative;
+	z-index: 1;
+	span {
+		color: #8e7b3f;	
+	}
+	&:after {
+		content:'';
+		position: absolute;
+		width: 151px;
+		height: 109px;
+		background: url(../img/barber_01.png) top center no-repeat/cover;
+		top: 17px;
+    	left: -20px;
+		z-index: -1;
+	}
+	&:before {
+		position: absolute;
+		content: '';
+		background: #363636;
+		width: 107px;
+		height: 17px;
+		display: block;
+		top: 50%;
+		left: -140px;
+	}
+}
+.offerInfo__subtitle {
+	width: 100%;
+	max-width: 470px;
+	padding-top: 44px;
+	padding-bottom: 55px;
+	line-height: 2;
+	letter-spacing: 0.04em;
+}
+.offerInfo__btn {
+	margin-bottom: 44px;	
+}
+.offerInfo__txt {
+	font-family: 'Open Sans Condensed', sans-serif;
+	color: #7b7b7b;
+	font-size: 15px;
+	letter-spacing: 0.04em;
+	span {
+		font-size: 13px;
+		margin-right: 10px;
+	}	
+}
+.offerPic {
+	position: relative;
+	img:first-child {
+		position: absolute;
+		top: 0;
+		left: -30px;
+		z-index: 2;
+	}
+	img:nth-child(2){
+	    position: absolute;
+	    top: -38px;
+	    z-index: 3;
+	    left: -120px;
+	}
+}
+.offerPic__txt {
+	color: #eaeaea;
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	margin-top: -240px;
+	font: 479px 'BR_Haetten', sans-serif;
+	text-transform: uppercase;
+	z-index: 1;
+}
+
+/*==
+	Section "Services" 
+					  ==*/
+.services {
+	padding-top: 100px;
+	padding-bottom: 137px;
+	.container {
+		position: relative;
+	}
+}
+.linkMouse {
+	position: absolute;
+	top: -130px;
+	left: 5px;
+	background: #fff;
+	display: block;
+	width: 56px;
+	height: 56px;
+	@include flex-center;
+	box-shadow: 0px -15px 50px 0px rgba(51, 109, 116, 0.2);
+}
+.icon-Mouse {
+	font-size: 23px;
+	color: #7b7b7b;
+}
+.servicesTitle,
+.portfolioTitle {
+	padding-top: 23px;
+	padding-bottom: 100px;
+	position: relative;	
+	span {
+		color: #d2d2d2;
+	}
+	&:before {
+		position: absolute;
+		content: '';
+		background: #363636;
+		width: 107px;
+		height: 12px;
+		display: block;
+		top: 0;
+		left: -127px;
+	}
+}
+.servicesPrice {
+	padding-bottom: 145px;
+}
+.servicesPrice__item {
+	padding-top: 180px;
+	padding-left: 165px;
+	width: 270px;
+	height: 266px;
+	box-shadow: 5px 15px 60px 0px rgba(41, 75, 79, 0.4);
+}
+.servicesPrice__link {
+	letter-spacing: 0.04em;
+	position: relative;
+	font: 25px 'BR_Haetten', sans-serif;
+	text-transform: uppercase;
+	color: #363636;
+	background: #fff;
+	width: 170px;
+	padding-top: 20px;
+	padding-bottom: 8px;
+	padding-left: 27px;
+	z-index: 1;
+	span {
+		font: 18px 'Open Sans Condensed', sans-serif;
+		margin-left: 16px;
+		letter-spacing: 0.01em;
+	}
+	&:after {
+		position: absolute;
+		content: '';
+		display: block;
+		left: 12px;
+		top: 12px;
+		width: 150px;
+		height: 100%;		
+		z-index: -1;
+		border: 1px solid #a8a8a8;
+	}
+}
+.servicesPrice__item_hair {
+	background: url(../img/services__01.png) no-repeat top center/cover;
+	margin-right: 112px;
+}
+.servicesPrice__item_clipper {
+	background: url(../img/services__02.png) no-repeat top center/cover;
+	margin-right: 123px;
+	padding-left: 135px;
+	.servicesPrice__link {
+		width: 230px;
+		&:after {
+			width: 183px;
+		}
+	}
+}
+.servicesPrice__item_beard {
+	background: url(../img/services__03.png) no-repeat top center/cover;
+	padding-left: 97px;
+	.servicesPrice__link {
+		width: 230px;
+		&:after {
+			width: 215px;
+		}
+	}
+}
+.servicesForm {
+	padding-left: 202px;
+	padding-bottom: 135px;
+	input {
+		font: 400 13px 'Open sans', sans-serif;
+		letter-spacing: 0.04em;
+		display: block;
+		border: none;
+		border-bottom: 1px solid #919191;
+		width: 280px;
+		padding-bottom: 17px;
+		margin-bottom: 36px;
+	}
+}
+.servicesForm__subtitle {
+	font-size: 14px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+.servicesForm__btn {
+	cursor: pointer;
+	padding-top: 5px;
+	padding-bottom: 10px;
+	width: 171px;
+	font-size: 17px;
+	span {
+		font-size: 30px;
+	}
+}
+.servicesHistory {	
+	padding-right: 162px;
+	padding-bottom: 10px;
+	position: relative;
+	z-index: 0;
+	&:after {
+		position: absolute;
+		top: -75%;
+		left: -50%;
+		content:'';
+		display: block;
+		width: 662px;
+		height: 481px;
+		background: url(../img/barber_03.png) no-repeat top center/cover;
+		z-index: -1;
+	}
+	&:before {
+		position: absolute;
+		content: '';
+		background: #363636;
+		width: 107px;
+		height: 9px;
+		display: block;
+		top: -25px;
+		left: -130px;
+	}
+}
+.servicesHistory__title {
+	font-size: 55px;
+	max-width: 210px;
+}
+.servicesHistory__subtitle {
+	padding-top: 15px;	
+	width: 200px;
+	line-height: 2;
+}
+.servicesTeam__subtitle {
+	padding-top: 40px;
+	padding-bottom: 65px;
+	line-height: 2.1;
+	width: 100%;
+	max-width: 470px;
+}
+.servicesTeam__list {
+	width: 100%;
+	flex-wrap: wrap;
+	li {
+		width: 270px;
+	}	
+}
+.servicesPerson__wrap {
+	margin-left: 35px;
+}
+.servicesPerson__position {
+	font: 14px 'Open Sans Condensed', sans-serif;
+}
+.servicesPerson__pic {
+	padding-bottom: 40px;
+	position: relative;
+	&:after {
+		position: absolute;
+		top: 40px;
+		right: -75px;
+		content:'';
+		display: block;
+		width: 39px;
+		height: 39px;
+		border-top: 1px solid #c1c1c1;
+		border-right: 1px solid #c1c1c1;
+	}
+}
+
+/*==
+	Section "Portfolio" 
+					   ==*/
+.gallery__Item {
+	a {
+		display: block;
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-bottom: 10px;
+		position: relative;
+		overflow: hidden;
+		img {
+			transition: $ease;
+		}
+		span {
+			padding-top: 14%;
+			padding-left: 18%;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: rgba(242, 211, 103, 0.9);
+			opacity: 0;
+			top: 0;
+			font: 27px 'BR_Haetten', sans-serif;
+			text-transform: uppercase;
+			color: #363636;
+			line-height: 1.3;
+			transition: $ease;
+			&:before {
+				position: absolute;
+				content:'';
+				display: block;
+				border: 2px solid;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: 15px 18px;
+			}
+			&:after {
+				position: absolute;
+				content:'+';
+				display: block;
+				width: 48px;
+				height: 48px;
+				color: #f2d367;
+				background: #363636;
+				bottom: 0;
+				right: 0;
+				margin: 15px 18px;
+				text-align: center;
+				line-height: 38px;
+			}
+		}
+		&:hover {
+			span {
+				opacity: 1;
+			}
+			img {
+				transform: scale(1.05);
+			}
+		}
+		
+	}
+}
+.gallery__Item:first-child {
+	a {
+		margin-left: 0;
+	}
+}
+.gallery__Item:last-child {
+	a {
+		margin-right: 0;
+	}
+}
+
+@import 'media';

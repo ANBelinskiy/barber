@@ -1,0 +1,82 @@
+*,
+*:after,
+*:before {
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+img {
+    border-style: none;
+}
+
+div,
+p,
+form,
+input,
+a,
+span,
+button {
+    box-sizing: border-box;
+}
+
+body {
+    color: $gray-dark;
+    font: 400 15px 'Open sans',
+    sans-serif;
+    letter-spacing: .04em;
+    line-height: 31px;
+}
+
+ .container {
+     width: 100%;
+     margin: 0 auto;
+     padding: 0;
+ }
+
+.container-fluid {
+    width: 100%;
+    margin: 0 auto;
+}
+
+ol,
+ul,
+dl,
+li {
+    list-style: none;
+    display: block;
+}
+
+p {
+    margin: 0;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}

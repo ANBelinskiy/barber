@@ -1,0 +1,146 @@
+input,
+input:focus,
+input:visited,
+input:active,
+input:hover,
+textarea:focus,
+textarea,
+textarea:hover,
+textarea:visited,
+textarea:active,
+    {
+    outline: none;
+}
+
+#loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: rgba(240, 240, 240, .91);
+    overflow: hidden;
+    display: none;
+    z-index: 100000;
+}
+
+input.error {
+    border: 2px solid red;
+}
+
+input.valid {
+    border: 2px solid #378a2dbf;
+}
+
+#loader img {
+    z-index: 100000;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    margin-left: -25px;
+    top: 50%;
+    margin-top: -25px;
+}
+
+#overlay {
+    z-index: 100000;
+    display: none;
+    position: fixed;
+    @extend %w-h-100;
+    background: rgba(0, 0, 0, .5);
+    left: 0px;
+    top: 0px;
+    cursor: pointer;
+}
+
+#thx {
+    z-index: 100001;
+    color: $black;
+    font-size: 20px;
+    font-weight: 400;
+    width: 50%;
+    background: $white;
+    opacity: 1;
+    text-align: center;
+    position: absolute;
+    left: 25%;
+    top: 40%;
+    padding: 30px;
+}
+
+.modal {
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-dialog {
+    top: 15%;
+    left: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+    max-width: 466px;
+    min-width: 290px;
+    margin: auto;
+    width: 100%;
+    height: auto;
+}
+
+.modal-content {
+    background: $white;
+    position: relative;
+    border: none;
+    border-radius: 0;
+    max-width: 466px;
+    min-width: 290px;
+    width: 100%;
+    height: auto;
+
+    form {
+        padding: 20px 0px 20px 40px;
+
+        p {
+            font-size: 14px;
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+    }
+
+    input {
+        font: 400 13px 'Open sans', sans-serif;
+        letter-spacing: .04em;
+        display: block;
+        border: none;
+        border-bottom: 1px solid #919191;
+        width: 280px;
+        padding-bottom: 17px;
+        margin-bottom: 36px;
+    }
+
+    
+}
+
+.close {
+    background: $gray-dark;
+    z-index: 100002;
+    width: 34px;
+    height: 35px;
+    color: $white;
+    font-size: 34px;
+    font-weight: 400;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    transition: $transition;
+    cursor: pointer;
+    &:focus, &:active {
+        outline: none;
+    }
+    &:hover {
+        color: $white;
+        background: $gray-light;
+        transition: $transition;
+    }
+}

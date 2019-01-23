@@ -1,0 +1,42 @@
+// body_elements 
+@import 'body_elements/text';
+
+// Подключаем  Bootstrap
+
+// Требуемое
+@import "../../node_modules/bootstrap/scss/functions" ;
+@import "../../node_modules/bootstrap/scss/variables" ;
+@import "../../node_modules/bootstrap/scss/mixins"    ;
+
+// Опциональное
+@import "../../node_modules/bootstrap/scss/reboot"             ; // normalize
+@import "../../node_modules/bootstrap/scss/grid"               ; // сетка
+@import "../../node_modules/bootstrap/scss/modal"              ; // модальные окна
+// @import "../../node_modules/bootstrap/scss/carousel"              ; // модальные окна
+@import "../../node_modules/bootstrap/scss/utilities/_text"    ; // выравнивание текста
+@import "../../node_modules/bootstrap/scss/utilities/_display" ; // скрываем и показываем блоки для разных разрешений
+
+// переменные
+@import "variable/variable"                     ; 
+
+// special animation->placeholder; castom browserScrollBar
+@import "special/special.scss"                  ;
+@import "special/placeholder.scss"              ;
+
+// head
+@import "head/header"                           ;
+
+// body_elements 
+@import 'body_elements/body'                    ;
+@import 'body_elements/button'                  ;
+@import 'body_elements/form'                    ;
+@import 'body_elements/text'                    ;
+
+// footer
+@import 'footer/footer'                         ;
+
+// content
+@import 'content/content'                       ;
+
+// adaptive
+@import 'adaptive/adaptive'                     ;

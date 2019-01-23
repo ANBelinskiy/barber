@@ -1,0 +1,28 @@
+{
+  "name": "barber",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Dmitry Zabelin <wd-zabelin.ru>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "latest",
+    "normalize-css": "^8.0.0"
+  },
+  "overrides": {
+    "jquery": {
+      "main": [
+        "./dist/jquery.min.js"
+      ]
+    }
+  }
+}

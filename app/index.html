@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- META TAGS -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="description">
+    <meta name="keywords" content="keywords">
+    <meta name="theme-color" content="#9CC2CE"> <!-- цвет вкладки chrome -->
+    <!-- CANONICAL -->
+    <link rel="canonical" href="">
+    <!-- FAVICON LINK -->
+    <link rel="icon" href="img/content/ico/barber_01.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/content/ico/barber_01.png" type="image/x-icon">
+    <title>Barber</title>
+    <!-- OG TAGS -->
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:title" content="Barber">
+    <meta property="og:description" content="description">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="Barber">
+    <meta property="og:url" content="">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/libs/animate.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- --------------SECTION-HEADER(main) START-------------- -->
+    <header id="main">
+        <div class="container">
+            <div class="offer d-flex align-start">
+                <div class="offer-info">
+                    <a class="btn-phone fadeInLeft wow"
+                    data-wow-delay=".2s" 
+                    data-wow-duration="1.5s"
+                    href="tel:+19450952576">
+                        +1 945 095-25-76
+                    </a>
+                        <h1 class="fadeInLeft wow"
+                        data-wow-delay=".2s" 
+                    data-wow-duration="1.5s">
+                            B<span>a</span>rber shop
+                        </h1>
+                    <p class="offer-text fadeInLeft wow" 
+                    data-wow-delay=".5s" 
+                    data-wow-duration="1.8s">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    </p>
+                        <a data-toggle="modal" id="get_popup" 
+                        href="#get_popup_modal" 
+                        class="btn-form fadeInLeft wow"
+                        data-wow-delay=".8s" 
+                        data-wow-duration="2.1s">
+                        <span>+</span> make an appointment
+                    </a>
+                    <p class="offer-callback fadeInLeft wow" 
+                    data-wow-delay="1.1s" 
+                    data-wow-duration="2.4s">
+                    <span class="icon icon-Time fadeInLeft wow"></span>
+                        We`ll call you back in 15 minutes
+                    </p>
+                </div>
+                <div class="offer-img">
+                <img class="wow fadeInRight"  
+                data-wow-delay="1.4s" 
+                data-wow-duration="3s"
+                    src="img/content/barber_02.png" alt="barber">
+                    <img class="fadeInUp wow"
+                    data-wow-delay="1.6s" 
+                    data-wow-duration="3.2s"
+                    src="img/content/beard.png"
+                        alt="beard">
+                    <p class="fadeIn wow" 
+                    data-wow-delay=".1s" 
+                    data-wow-duration="3s">
+                        Style
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ---------------SECTION-HEADER(main) END--------------- -->
+
+    <!-- ---------------SECTION-2(services) START------------------ -->
+    <section id="services" class="services">
+        <div class="container">
+            <a href="#services" class="link-mouse linkScroll">
+                <span class="icon icon-Mouse"></span>
+            </a>
+            <h2 class="services-title">
+                <span>Our</span>
+                Services
+            </h2>
+            <div class="servicesPrice d-flex">
+                <div class="servicesPrice__item servicesPrice__item_hair wow flash" 
+                data-wow-delay="0.3s"
+                data-wow-duration="1.2s"
+                data-wow-offset="300">
+                    <a href="#popupResult" class="linkScroll servicesPrice__link d-flex align-center">
+                        Haircut <span>$55</span>
+                    </a>
+                </div>
+                <div class="servicesPrice__item servicesPrice__item_clipper wow flash" 
+                data-wow-delay="0.3s"
+                data-wow-duration="1.2s"
+                data-wow-offset="300">
+                    <a href="#popupResult" class="linkScroll servicesPrice__link d-flex align-center">
+                        clipper cut <span>$25</span>
+                    </a>
+                </div>
+                <div class="servicesPrice__item servicesPrice__item_beard wow flash" 
+                data-wow-delay="0.3s"
+                data-wow-duration="1.2s"
+                data-wow-offset="300">
+                    <a href="#popupResult" class="linkScroll servicesPrice__link d-flex align-center">
+                        Beard Services <span>$75</span>
+                    </a>
+                </div>
+            </div>
+            <div class="servicesBlock d-flex align-end justify-between">
+                <span class="icon icon-Typing wow fadeIn"
+                data-wow-delay="0.3s"
+                data-wow-duration="1.2s"
+                data-wow-offset="300"></span>
+                <form action="php/success.php" id="popupResult" class="js-form wow fadeIn" method="post"
+                data-wow-delay="0.3s"
+                data-wow-duration="1.2s"
+                data-wow-offset="300">
+                    <h4>
+                        Wanna order smth?
+                    </h4>
+                    <p>
+                        Full out this form and we`ll contact back shortly
+                    </p>
+
+                    <input type="text" name="name" class="form-control" placeholder="Type your name">
+                    <input type="tel" name="tel" maxlength="13" minlength="13" class="form-control" placeholder="Type your phone nuber">
+
+                    <button type="button" data-submit class="btn-form btn-default">
+                        <span>+</span> call me back
+                    </button>
+                </form>
+                <div class="servicesHistory wow fadeIn"
+                data-wow-delay="0.3s"
+                data-wow-duration="1.2s"
+                data-wow-offset="300">
+                    <h3>
+                        History<br>
+                        of quality
+                    </h3>
+                    <p>
+                        How we started out this beard-style business
+                    </p>
+                </div>
+            </div>
+            <div class="servicesTeam wow fadeIn" 
+            data-wow-delay="0.3s" 
+            data-wow-duration="1.2s" 
+            data-wow-offset="300">
+                <h4>
+                    Garage team
+                </h4>
+                <p class="servicesTeam__subtitle">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                    eu fugiat nulla pariatur.
+                </p>
+                <ul class="servicesTeam__list d-flex justify-between text-center">
+                    <li class>
+                        <span class="icon icon-WorldWide"></span>
+                        <div class="servicesPerson d-flex align-end">
+                            <div class="servicesPerson__pic">
+                                <img src="img/content/team_01.png" alt="team">
+                            </div>
+                            <div class="servicesPerson__wrap text-left">
+                                <h5>
+                                    Ivan Dorn
+                                </h5>
+                                <p>
+                                    Main singer heat-maker
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon icon-Tie"></span>
+                        <div class="servicesPerson d-flex align-end">
+                            <div class="servicesPerson__pic">
+                                <img src="img/content/team_02.png" alt="team">
+                            </div>
+                            <div class="servicesPerson__wrap text-left">
+                                <h5>
+                                    Vanya Dron
+                                </h5>
+                                <p>
+                                    Second singer hit-maker
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon icon-Stop"></span>
+                        <div class="servicesPerson d-flex align-end">
+                            <div class="servicesPerson__pic">
+                                <img src="img/content/team_01.png" alt="team">
+                            </div>
+                            <div class="servicesPerson__wrap text-left">
+                                <h5>
+                                    Ivan Dorn
+                                </h5>
+                                <p>
+                                    Main singer heat-maker
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="icon icon-Scisors"></span>
+                        <div class="servicesPerson d-flex align-end">
+                            <div class="servicesPerson__pic">
+                                <img src="img/content/team_02.png" alt="team">
+                            </div>
+                            <div class="servicesPerson__wrap text-left">
+                                <h5>
+                                    Vanya Dron
+                                </h5>
+                                <p>
+                                    Second singer hit-maker
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------SECTION-2(services) END-------------------- -->
+
+    <!-- ---------------SECTION-3(works) START--------------------- -->
+    <section id="works">
+        <div class="container">
+            <h2 class="portfolio-title">
+				<span>Recent</span>
+				works
+            </h2>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="masonry-container">
+                    <div class="col-12 col-xs-6 col-sm-4 col-md-3 col-lg-2 item wow fadeInUp"
+                    data-wow-delay="0.3s"
+                    data-wow-duration=".5s"
+                    data-wow-offset="400">
+                        <a href="img/content/gallery_01.png">
+                            <img src="img/content/gallery_01.png" alt="gallery">
+                            <span>
+                                long beard<br>
+                                on tatooed man
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-xs-6 col-sm-4 col-md-3 col-lg-2 item wow fadeInUp" 
+                    data-wow-delay="0.5s"
+                    data-wow-duration=".7s"
+                    data-wow-offset="400">
+                        <a href="img/content/gallery_03.png">
+                            <img src="img/content/gallery_03.png" alt="gallery">
+                            <span>
+                                long beard<br>
+                                on tatooed man
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-xs-6 col-sm-4 col-md-3 col-lg-2 item wow fadeInUp"
+                    data-wow-delay="0.7s"
+                    data-wow-duration=".9s"
+                    data-wow-offset="400">
+                        <a href="img/content/gallery_05.png">
+                            <img src="img/content/gallery_05.png" alt="gallery">
+                            <span>
+                                long beard<br>
+                                on tatooed man
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-xs-6 col-sm-4 col-md-3 col-lg-2 item wow fadeInUp"
+                    data-wow-delay="0.3s"
+                    data-wow-duration=".5s"
+                    data-wow-offset="400">
+                        <a href="img/content/gallery_07.png">
+                            <img src="img/content/gallery_07.png" alt="gallery">
+                            <span>
+                                long beard<br>
+                                on tatooed man
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-xs-6 col-sm-4 col-md-3 col-lg-2 item wow fadeInUp"
+                    data-wow-delay="0.5s"
+                    data-wow-duration=".7s"
+                    data-wow-offset="400">
+                        <a href="img/content/gallery_09.png">
+                            <img src="img/content/gallery_09.png" alt="gallery">
+                            <span>
+                                long beard<br>
+                                on tatooed man
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-xs-6 col-sm-4 col-md-3 col-lg-2 item wow fadeInUp" 
+                    data-wow-delay="0.7s"
+                    data-wow-duration=".9s"
+                    data-wow-offset="400">
+                        <a href="img/content/gallery_04.png">
+                            <img src="img/content/gallery_04.png" alt="gallery">
+                            <span>
+                                long beard<br>
+                                on tatooed man
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-xs-6 col-sm-4 col-md-3 col-lg-2 item wow fadeInUp"
+                    data-wow-delay="0.3s"
+                    data-wow-duration=".5s"
+                    data-wow-offset="400">
+                        <a href="img/content/gallery_06.png">
+                            <img src="img/content/gallery_06.png" alt="gallery">
+                            <span>
+                                long beard<br>
+                                on tatooed man
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-xs-6 col-sm-4 col-md-3 col-lg-2 item wow fadeInUp"
+                    data-wow-delay="0.3s"
+                    data-wow-duration=".5s"
+                    data-wow-offset="400">
+                        <a href="img/content/gallery_10.png">
+                            <img src="img/content/gallery_10.png" alt="gallery">
+                            <span>
+                                long beard<br>
+                                on tatooed man
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-xs-6 col-sm-4 col-md-3 col-lg-2 item wow fadeInUp"
+                    data-wow-delay="0.5s"
+                    data-wow-duration=".7s"
+                    data-wow-offset="300">
+                        <a href="img/content/gallery_02.png">
+                            <img src="img/content/gallery_02.png" alt="gallery">
+                            <span>
+                                long beard<br>
+                                on tatooed man
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-xs-6 col-sm-4 col-md-3 col-lg-2 item wow fadeInUp"
+                    data-wow-delay="0.7s"
+                    data-wow-duration=".9s"
+                    data-wow-offset="300">
+                        <a href="img/content/gallery_08.png">
+                            <img src="img/content/gallery_08.png" alt="gallery">
+                            <span>
+                                long beard<br>
+                                on tatooed man
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------SECTION-3(works) END----------------------- -->
+
+    <!-- ---------------SECTION-FOOTER(social) START--------------- -->
+    <footer>
+        <div class="container">
+            <div class="footerContent d-flex align-center justify-between wow fadeIn" 
+            data-wow-delay="0.8s"
+                    data-wow-duration="1.5s"
+                    data-wow-offset="200">
+                <div class="footerBlock">
+                    <span class="footerBlock__title">
+                            B<span>a</span>rber shop
+                    </span>
+                    <p>2017 / All right reserved</p>
+                </div>
+                <a class="footerBlock__phone btn-phone" href="tel:+19450952576">
+                    +1 945 095-25-76
+                </a>
+                <a class="footerBlock__mail" href="mailto:info@sitename.ru">
+                    info@sitename.ru
+                </a>
+                <a class="linkScroll footerBlock__mouse" href="#main">
+                    <i class="far fa-arrow-alt-circle-up"></i>
+                </a>
+                <div class="footerBlock__social d-flex">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div> 
+        </div>
+    </footer>
+    <!-- ---------------SECTION-FOOTER(social) END------------------ -->
+
+    <!-- -------------FEEDBACK FORM START--------------------- -->
+    <div class="modal fade" id="get_popup_modal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <form action="php/success.php" id="popupResult" class="js-form" method="post">
+                    <h4>
+                        Wanna order smth?
+                    </h4>
+                    <p>
+                        Full out this form and we`ll contact back shortly
+                    </p>
+
+                    <input type="text" name="name" class="form-control" placeholder="Type your name">
+                    <input type="tel" name="tel" maxlength="13" minlength="13" class="form-control" placeholder="Type your phone nuber">
+
+                    <button type="button" data-submit class="btn-form btn-default">
+                        <span>+</span> call me back
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------FEEDBACK FORM END------------------------- -->
+    <!-- -----indication loader----- -->
+    <div id="loader">
+        <img src="img/svg/ripple.svg">
+    </div>
+
+    <!-- -----message of thanks----- -->
+    <div id="overlay">
+        <div id="thx">
+            Спасибо за Ваше сообщение!<br>Мы обязательно вам перезвоним в ближайшее время.
+        </div>
+    </div>
+    <!-- ---------------FEEDBACK FORMS END--------------- -->
+
+<!-- ---------------MODAL SERVICES START--------------------- -->
+<div class="modal" id="get_popupServices" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                &times;
+            </button>
+            <h3 class="text-center">Описание</h3>
+            <p>
+                dcdcdcdcdcdcdcdcdcdcd
+            </p>
+        </div>
+    </div>
+</div>
+<!-- ---------------MODAL SERVICES END------------------------- -->
+    <script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js"
+    integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1"
+    crossorigin="anonymous"></script>
+    <script src="/js/libs/jquery-3.3.1.min.js"              ></script>
+    <script src="/js/libs/bootstrap.min.js"           defer ></script>
+    <script src="/js/libs/slow_scroll.js"             defer ></script>
+    <script src="/js/libs/slick.min.js"               defer ></script>
+    <script src="/js/libs/jquery.validate.min.js"     defer ></script>
+    <script src="/js/libs/form.js"                    defer ></script>
+    <script src="/js/libs/wow.min.js"                 defer ></script>
+    <script src="/js/libs/imagesloaded.pkgd.min.js"   defer ></script>
+    <script src="/js/libs/masonry.pkgd.min.js"        defer ></script>
+    <script src="/js/my.js"                           defer ></script>
+
+    <script>
+        $(function() {
+            new WOW().init();
+                // настройки скролла   
+                // Default
+                  jQuery.scrollSpeed(120, 1000);
+        });
+    </script>
+</body>
+</html>
